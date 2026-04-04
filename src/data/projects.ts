@@ -74,7 +74,7 @@ const projects: Project[] = [
       'This portfolio — designed and built from scratch using React, TypeScript, and Framer Motion with a strict editorial design system and no UI libraries.',
     stack: ['React', 'TypeScript', 'Vite', 'Framer Motion'],
     github: 'https://github.com/Dayozi/Dayozi.github.io',
-    live: 'https://dayozi.github.io',
+    live: 'https://dayozi-github-io.vercel.app/',
     image: '/images/portfolio.png',
     isPrivate: false,
     badges: [],
