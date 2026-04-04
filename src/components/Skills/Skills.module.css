@@ -1,0 +1,122 @@
+/* ============================================
+   SKILLS — Claude Colour System
+   ============================================ */
+
+.skills {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 520px;
+  margin-bottom: var(--space-12);
+  line-height: 1.75;
+}
+
+/* --- Categories grid --- */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-10) var(--space-16);
+  margin-bottom: var(--space-12);
+}
+
+@media (max-width: 640px) {
+  .categories {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* --- Single category --- */
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.categoryLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-accent);         /* burnt orange — replaces amber */
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.categoryLine {
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* --- Tags --- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  letter-spacing: 0.02em;
+  transition: color var(--transition-fast),
+              border-color var(--transition-fast),
+              background var(--transition-fast);
+  cursor: default;
+}
+
+.tag:hover {
+  color: var(--color-accent);         /* burnt orange on hover */
+  border-color: var(--color-accent);
+  background: var(--color-accent-dim);
+}
+
+/* --- Bottom note --- */
+.note {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-dim);
+  letter-spacing: 0.04em;
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-border);
+}
+
+/* --- Editorial section number --- */
+.sectionNum {
+  position: absolute;
+  right: var(--space-8);
+  bottom: var(--space-8);
+  font-family: var(--font-mono);
+  font-size: 9rem;
+  font-weight: 700;
+  color: var(--color-border);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.05em;
+  opacity: 0.5;                       /* softened for light bg */
+}
+
+@media (max-width: 768px) {
+  .sectionNum {
+    font-size: 5rem;
+  }
+}

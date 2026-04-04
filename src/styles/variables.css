@@ -1,0 +1,89 @@
+/* ============================================
+   DESIGN TOKENS — Emmanuel Owoeye Portfolio
+   Claude Colour System
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+:root {
+  /* --- Claude Colour Palette --- */
+
+  /* Backgrounds — warm cream spectrum */
+  --color-bg:         #F5F0E8;   /* warm parchment — the Claude "page" */
+  --color-surface:    #FAF8F4;   /* off-white card surface               */
+  --color-surface-2:  #EDE8DF;   /* slightly deeper warm tone            */
+  --color-surface-3:  #E4DDD2;   /* pressed / hover state                */
+
+  /* Borders */
+  --color-border:       #D6CFC3;
+  --color-border-hover: #B8B0A4;
+
+  /* Claude's signature orange-coral accent */
+  --color-accent:       #CC5500;   /* deep burnt-orange, the primary CTA   */
+  --color-accent-light: #E8722A;   /* hover / lighter pop                  */
+  --color-accent-dim:   rgba(204, 85, 0, 0.10);
+  --color-accent-glow:  rgba(204, 85, 0, 0.05);
+
+  /* Warm sand secondary */
+  --color-sand:         #B8A898;   /* muted warm tan for chips, icons      */
+  --color-sand-dim:     rgba(184, 168, 152, 0.15);
+
+  /* Typography */
+  --color-text:         #2C2825;   /* deep warm charcoal — not pure black  */
+  --color-text-muted:   #6B6460;   /* body copy, secondary text            */
+  --color-text-dim:     #9B9490;   /* placeholders, disabled               */
+  --color-white:        #FFFFFF;
+
+  /* Status */
+  --color-green:        #2D7A4F;
+
+  /* --- Typography --- */
+  --font-heading: 'Lora', Georgia, serif;   /* editorial serif — feels premium */
+  --font-body:    'Jost', sans-serif;       /* clean, modern, warm             */
+  --font-mono:    'DM Mono', monospace;
+
+  /* --- Type Scale --- */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  2rem;       /* 32px */
+  --text-4xl:  2.75rem;    /* 44px */
+  --text-5xl:  3.75rem;    /* 60px */
+  --text-6xl:  5rem;       /* 80px */
+
+  /* --- Spacing --- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* --- Layout --- */
+  --max-width: 1200px;
+  --nav-height: 72px;
+
+  /* --- Border Radius --- */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* --- Transitions --- */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* --- Z-index --- */
+  --z-nav:     100;
+  --z-overlay: 200;
+}
